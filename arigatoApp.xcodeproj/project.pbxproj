@@ -11,6 +11,7 @@
 		CB744E34293CA8E600798E0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB744E33293CA8E600798E0A /* ContentView.swift */; };
 		CB744E36293CA8E700798E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB744E35293CA8E700798E0A /* Assets.xcassets */; };
 		CB744E39293CA8E700798E0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB744E38293CA8E700798E0A /* Preview Assets.xcassets */; };
+		CB744E41293CAB2900798E0A /* TwitterAPIKit in Frameworks */ = {isa = PBXBuildFile; productRef = CB744E40293CAB2900798E0A /* TwitterAPIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB744E41293CAB2900798E0A /* TwitterAPIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = arigatoApp;
+			packageProductDependencies = (
+				CB744E40293CAB2900798E0A /* TwitterAPIKit */,
+			);
 			productName = arigatoApp;
 			productReference = CB744E2E293CA8E600798E0A /* arigatoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = CB744E25293CA8E600798E0A;
+			packageReferences = (
+				CB744E3F293CAB2900798E0A /* XCRemoteSwiftPackageReference "TwitterAPIKit" */,
+			);
 			productRefGroup = CB744E2F293CA8E600798E0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB744E3F293CAB2900798E0A /* XCRemoteSwiftPackageReference "TwitterAPIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mironal/TwitterAPIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB744E40293CAB2900798E0A /* TwitterAPIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB744E3F293CAB2900798E0A /* XCRemoteSwiftPackageReference "TwitterAPIKit" */;
+			productName = TwitterAPIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB744E26293CA8E600798E0A /* Project object */;
 }
